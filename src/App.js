@@ -4,7 +4,7 @@ import { useEffect, useState, useRef } from 'react';
 
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { initializeApp } from "firebase/app";
-import { getAuth, signInWithRedirect, signOut, GoogleAuthProvider } from "firebase/auth";
+import { getAuth, signInWithPopup, signOut, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore, collection, onSnapshot, addDoc, serverTimestamp, query, orderBy } from "firebase/firestore";
 
 import { Button } from '@mui/material';
@@ -34,7 +34,7 @@ const auth = getAuth();
 const db = getFirestore(app);
 
 const logIn = () => {
-    signInWithRedirect(auth, provider);
+    signInWithPopup(auth, provider);
 }
 
 const logOut = () => {
