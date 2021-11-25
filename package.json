@@ -1,7 +1,7 @@
 {
   "name": "vchat",
   "version": "0.1.0",
-  "homepage": "http://vhegde14.github.io/vchat",
+  "homepage": "https://vhegde14.github.io/vchat",
   "private": true,
   "dependencies": {
     "-": "0.0.1",
